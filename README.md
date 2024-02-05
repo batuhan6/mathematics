@@ -1,2 +1,0 @@
-# mathematics
-Mathematics for everyone
