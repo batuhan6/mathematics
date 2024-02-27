@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f5f5; /* Hafif bir mavi tonu */
+    color: #333; /* Metin rengi */
+    font-family: 'Arial', sans-serif; /* Font family ayarı */
+}
+
+header {
+    background-color: #3498db; /* Başlık arka plan rengi */
+    color: #fff; /* Başlık metin rengi */
+}
+
+nav ul {
+    background-color: #2980b9; /* Navigasyon menüsü arka plan rengi */
+}
+
+nav a {
+    color: #fff; /* Navigasyon bağlantıları rengi */
+}
+
+#corner-image {
+    position: absolute;
+    top: 60px; 
+    right: 90px; 
+    width: 140px; 
+    height: 140px; 
+    border-radius: 70%; 
+    transition: transform 0.5s ease; /* Dönme efekti için geçiş tanımı */
+}
+
+section {
+    background-color: #3fc8ea; /* Bölüm arka plan rengi */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section h2:hover {
+    transform: scale(1.1);
+    color: #2ecc71; /* Hover efekti ile renk değişimi (açık yeşil) */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #3498db; /* Footer arka plan rengi */
+    color: #fff; /* Footer metin rengi */
+    padding: 10px;
+    text-align: center;
+}
