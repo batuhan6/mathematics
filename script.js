@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cornerImage.addEventListener("click", function () {
         if (!isBig) { // eğer resim küçükse büyüt
-            cornerImage.style.transform = "scale(20.5) translateX(-10%)"; // resmi 20 kat büyütür ve sola kaydırır
+            cornerImage.style.transform = "scale(20.5) translateX(-15%)"; // resmi 20 kat büyütür ve sola kaydırır
             isBig = true; // resmin büyük olduğunu belirt
 
             // setTimeout kullanarak belirli bir süre sonra resmi küçült
