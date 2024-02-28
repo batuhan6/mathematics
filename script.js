@@ -1,19 +1,3 @@
-/* document.addEventListener("DOMContentLoaded", function () {
-
-    var cornerImage = document.getElementById("corner-image");
-
-    cornerImage.addEventListener("mouseenter", function () {
-        cornerImage.style.transform = "scale(2.5)"; // resmi 1.5 kat büyütür
-    });
-
-    cornerImage.addEventListener("mouseleave", function () {
-        cornerImage.style.transform = "scale(0.1)"; // resmi 0.5 kat küçültür
-    });
-});
-
-*/
-
-/*
 document.addEventListener("DOMContentLoaded", function () {
 
     var cornerImage = document.getElementById("corner-image");
@@ -21,29 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cornerImage.addEventListener("click", function () {
         if (!isBig) { // eğer resim küçükse büyüt
-            cornerImage.style.transform = "scale(20.5)"; // resmi 1.5 kat büyütür
-            isBig = true; // resmin büyük olduğunu belirt
-
-            // setTimeout kullanarak belirli bir süre sonra linki aç
-            setTimeout(function () {
-                // Linki açmak için gerekli kodu buraya ekleyin
-                window.location.href = "https://batuhan6.gitlab.io/time/"; // Örnek bir link
-            }, 2000); // 2000 milisaniye (2 saniye) beklet
-        }
-    });
-});
-
-
-*/
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    var cornerImage = document.getElementById("corner-image");
-    var isBig = false; // resmin büyük olup olmadığını kontrol eden bir değişken
-
-    cornerImage.addEventListener("click", function () {
-        if (!isBig) { // eğer resim küçükse büyüt
-            cornerImage.style.transform = "scale(20.5) translateX(-10%)"; // resmi 20 kat büyütür ve sola kaydırır
+            cornerImage.style.transform = "scale(20.5) translateX(-10%)"; // resmi 1.5 kat büyütür
             isBig = true; // resmin büyük olduğunu belirt
 
             // setTimeout kullanarak belirli bir süre sonra resmi küçült
@@ -61,3 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function checkWindowSize() {
+    // Sayfa boyutunu kontrol et
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Eğer sayfa boyutu 600 pikselden büyükse
+    if (windowWidth > 1050) {
+        document.getElementById("dynamicHeading").innerHTML = "<h1>Machine Learning and Mathematics</h1>";
+    } else {
+        document.getElementById("dynamicHeading").innerHTML = "<h1>Machine Learning </h1><h1>and Mathematics</h1>";
+    }
+}
+
+// Sayfa yüklendiğinde ve boyut değiştiğinde kontrolü yap
+window.onload = checkWindowSize;
+window.onresize = checkWindowSize;
