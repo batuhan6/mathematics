@@ -30,7 +30,7 @@ nav a {
 #corner-image {
     position: absolute;
     top: 60px; 
-    right: 90px; 
+    right: 150px; 
     width: 140px; 
     height: 140px; 
     border-radius: 70%; 
@@ -56,6 +56,8 @@ footer {
     text-align: center;
 }
 
+
+
 @media only screen and (max-width: 1050px) {
     body {
         background-color: #f0f5f5; /* Hafif bir mavi tonu */
@@ -76,9 +78,20 @@ footer {
         color: #fff; /* Navigasyon bağlantıları rengi */
     }
     
+    #home {
+        position: absolute;
+        top: 30px; 
+        right: 15px; 
+        width: 70px; 
+        height: 70px; 
+        border-radius: 70%; 
+        transition: transform 0.5s ease; /* Dönme efekti için geçiş tanımı */
+    }
+    
+
     #corner-image {
         position: absolute;
-        top: 70px; 
+        top:115px; 
         right: 30px; 
         width: 140px; 
         height: 140px; 
