@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // setTimeout kullanarak belirli bir süre sonra linki aç
                 setTimeout(function () {
                     // Linki açmak için gerekli kodu buraya ekleyin
-                    window.location.href = "https://batuhan6.gitlab.io/time/"; // Örnek bir link
+                    window.location.href = "https://batuhan6.gitlab.io/you_are_the_center_of_the_universe/"; // Örnek bir link
                 }, 2000); // 2000 milisaniye (2 saniye) beklet
             }, 600); // Hemen küçültme işlemini başlat
         }
